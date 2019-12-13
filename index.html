@@ -8,21 +8,155 @@
         <div class="container">
             <header>
                 <h1 id="title">Employment Application Form</h1>
-                <p id="description" class="basic-text">
+                <p id="description" class="basic-text centered-text">
                 Complete the following form as part of the recruitment process here at TheCompany.com
                 </p>
             </header>
             <form action="" id="survey-form">
                 <div class="form-grouping">
-                    <label id="name-labeling" for="name">Name</label>
+                    <label id="name-label" for="name">Name</label>
                     <input  
                         type="text"
-                        id="name"
                         name="name"
+                        id="name"
                         class="input-blank"
                         placeholder="Your name"
-                        required
-                    />
+                        required/>
+                </div>
+
+                <div class="form-grouping">
+                    <label id="email-label" for="email">Email</label>
+                    <input  
+                        type="email"
+                        name="email"
+                        id="email"
+                        class="input-blank"
+                        placeholder="Your email"
+                        required/>
+                </div>
+
+                <div class="form-grouping">
+                    <label id="number-label" for="number">Years of Experience in Industry</label>
+                    <input
+                        type="number"
+                        name="number"
+                        id="number"
+                        class="input-blank"
+                        placeholder="Years"
+                        min="0"
+                        max="100"/>
+                </div>
+
+                <div class="form-grouping">
+                    <label id="dropdown-label" for="level">How would you describe your experience level?</label>
+                    <select id="dropdown" name="level" class="input-blank" required>
+                        <option disable selected value>Please select an option</option>
+                        <option value="entry-level">Entry-level</option>
+                        <option value="mid-level">Mid-level</option>
+                        <option value="senior-level">Senior-level</option>
+                    </select>
+                </div>
+
+                <div class="form-grouping">
+                    <p class="basic-text">Please select the branch you're interested in:</p>
+                    <label>
+                        <input
+                            type="radio"
+                            name="branch-radio"
+                            class="input-radio"
+                            value="Aguadilla"
+                        />Aguadilla
+                    </label>
+
+                    <label>
+                        <input
+                            type="radio"
+                            name="branch-radio"
+                            class="input-radio"
+                            value="Arecibo"
+                        />Arecibo
+                    </label>
+
+                    <label>
+                        <input
+                            type="radio"
+                            name="branch-radio"
+                            class="input-radio"
+                            value="Dorado"
+                        />Dorado
+                    </label>
+
+                    <label>
+                        <input
+                            type="radio"
+                            name="branch-radio"
+                            class="input-radio"
+                            value="San-Juan"
+                        />San Juan
+                    </label>
+                </div>
+
+                <div class="form-grouping">
+                    <p class="basic-text">Which of these opportunities are you looking for?</p>
+                    <label>
+                        <input
+                            type="checkbox"
+                            name="op-checkbox"
+                            class="input-checkbox"
+                            value="temporary"
+                        />Temporary
+                    </label>
+
+                    <label>
+                        <input
+                            type="checkbox"
+                            name="op-checkbox"
+                            class="input-checkbox"
+                            value="contract"
+                        />Contract
+                    </label>
+
+                    <label>
+                        <input
+                            type="checkbox"
+                            name="op-checkbox"
+                            class="input-checkbox"
+                            value="part-time"
+                        />Part-time
+                    </label>
+
+                    <label>
+                        <input
+                            type="checkbox"
+                            name="op-checkbox"
+                            class="input-checkbox"
+                            value="full-time"
+                        />Full-time
+                    </label>
+
+                    <label>
+                        <input
+                            type="checkbox"
+                            name="op-checkbox"
+                            class="input-checkbox"
+                            value="remote"
+                        />Remote
+                    </label>
+                </div>
+
+                <div class="form-grouping">
+                    <label class="basic-text">Please include any additional comments you think we should consider:</label>
+                    <textarea
+                        id="add-comments"
+                        rows="10"
+                        cols="40">
+                    </textarea>
+                </div>
+
+                <div class="form-grouping">
+                    <button type="submit" id="submit-form" class="submit-button">
+                        Submit
+                    </button>
                 </div>
             </form>
         </div>
