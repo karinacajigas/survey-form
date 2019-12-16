@@ -1,0 +1,37 @@
+:root {
+    --color-white: #ffffff;
+    --color-darktone: #302900;
+    --color-yellow: #F2CE00;
+    --color-mustard: #CFB000;  
+}
+
+html {
+    box-sizing: border-box;
+  }
+  *, *:before, *:after {
+    box-sizing: inherit;
+  }
+
+form {
+    background-color: var(--color-darktone);
+    padding: 50px;
+    margin-top: 50px;
+    margin: 500px;
+}
+
+body {
+    font-size: 1rem;
+    color: var(--color-white);
+    margin: 0;
+}
+
+#title {
+    font-family: 'Montserrat', serif;
+}
+
+.basic-text, form {
+    font-family: 'Noto Sans', serif;
+}
+
+
+

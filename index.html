@@ -1,55 +1,62 @@
 <!DOCTYPE html>
 <html lang="en-US">
     <head>
-        <meta charset="UTF-8">
+        <!-- Required meta tags -->
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+        <!-- Bootstrap CSS -->
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+        <link href="style.css" type="text/css" rel="stylesheet">
+        <link   rel="stylesheet"
+                href="https://fonts.googleapis.com/css?family=Montserrat:700|Noto+Sans&display=swap">
         <title>Employment Application</title>
     </head>
     <body>
         <div class="container">
             <header>
                 <h1 id="title">Employment Application Form</h1>
-                <p id="description" class="basic-text centered-text">
+                <p id="description" class="basic-text text-centered">
                 Complete the following form as part of the recruitment process here at TheCompany.com
                 </p>
             </header>
             <form action="" id="survey-form">
-                <div class="form-grouping">
+                <div class="form-group">
                     <label id="name-label" for="name">Name</label>
                     <input  
                         type="text"
                         name="name"
                         id="name"
-                        class="input-blank"
+                        class="form-control"
                         placeholder="Your name"
                         required/>
                 </div>
 
-                <div class="form-grouping">
+                <div class="form-group">
                     <label id="email-label" for="email">Email</label>
                     <input  
                         type="email"
                         name="email"
                         id="email"
-                        class="input-blank"
+                        class="form-control"
                         placeholder="Your email"
                         required/>
                 </div>
-
-                <div class="form-grouping">
+                
+                <div class="form-group">
                     <label id="number-label" for="number">Years of Experience in Industry</label>
                     <input
                         type="number"
                         name="number"
                         id="number"
-                        class="input-blank"
+                        class="form-control"
                         placeholder="Years"
                         min="0"
                         max="100"/>
                 </div>
 
-                <div class="form-grouping">
+                <div class="form-group">
                     <label id="dropdown-label" for="level">How would you describe your experience level?</label>
-                    <select id="dropdown" name="level" class="input-blank" required>
+                    <select id="dropdown" name="level" class="form-control" required>
                         <option disable selected value>Please select an option</option>
                         <option value="entry-level">Entry-level</option>
                         <option value="mid-level">Mid-level</option>
@@ -57,13 +64,13 @@
                     </select>
                 </div>
 
-                <div class="form-grouping">
+                <div class="form-group">
                     <p class="basic-text">Please select the branch you're interested in:</p>
                     <label>
                         <input
                             type="radio"
                             name="branch-radio"
-                            class="input-radio"
+                            class="form-check-input"
                             value="Aguadilla"
                         />Aguadilla
                     </label>
@@ -72,7 +79,7 @@
                         <input
                             type="radio"
                             name="branch-radio"
-                            class="input-radio"
+                            class="form-check-input"
                             value="Arecibo"
                         />Arecibo
                     </label>
@@ -81,7 +88,7 @@
                         <input
                             type="radio"
                             name="branch-radio"
-                            class="input-radio"
+                            class="form-check-input"
                             value="Dorado"
                         />Dorado
                     </label>
@@ -90,19 +97,19 @@
                         <input
                             type="radio"
                             name="branch-radio"
-                            class="input-radio"
+                            class="form-check-input"
                             value="San-Juan"
                         />San Juan
                     </label>
                 </div>
 
-                <div class="form-grouping">
+                <div class="form-group">
                     <p class="basic-text">Which of these opportunities are you looking for?</p>
                     <label>
                         <input
                             type="checkbox"
                             name="op-checkbox"
-                            class="input-checkbox"
+                            class="form-check-input"
                             value="temporary"
                         />Temporary
                     </label>
@@ -111,7 +118,7 @@
                         <input
                             type="checkbox"
                             name="op-checkbox"
-                            class="input-checkbox"
+                            class="form-check-input"
                             value="contract"
                         />Contract
                     </label>
@@ -120,7 +127,7 @@
                         <input
                             type="checkbox"
                             name="op-checkbox"
-                            class="input-checkbox"
+                            class="form-check-input"
                             value="part-time"
                         />Part-time
                     </label>
@@ -129,7 +136,7 @@
                         <input
                             type="checkbox"
                             name="op-checkbox"
-                            class="input-checkbox"
+                            class="form-check-input"
                             value="full-time"
                         />Full-time
                     </label>
@@ -138,14 +145,14 @@
                         <input
                             type="checkbox"
                             name="op-checkbox"
-                            class="input-checkbox"
+                            class="form-check-input"
                             value="remote"
                         />Remote
                     </label>
                 </div>
 
-                <div class="form-grouping">
-                    <label class="basic-text">Please include any additional comments you think we should consider:</label>
+                <div class="form-group">
+                    <label class="form-control basic-text">Please include any additional comments you think we should consider:</label>
                     <textarea
                         id="add-comments"
                         rows="10"
@@ -153,8 +160,8 @@
                     </textarea>
                 </div>
 
-                <div class="form-grouping">
-                    <button type="submit" id="submit" class="submit-button">
+                <div class="form-group">
+                    <button type="submit" id="submit" class="btn btn-primary submit-button">
                         Submit
                     </button>
                 </div>
