@@ -5,33 +5,25 @@
     --color-mustard: #CFB000;  
 }
 
-html {
-    box-sizing: border-box;
-  }
-  *, *:before, *:after {
-    box-sizing: inherit;
-  }
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
 
 form {
-    background-color: var(--color-darktone);
-    padding: 50px;
-    margin-top: 50px;
-    margin: 500px;
+    padding: 2.5rem 0.625rem;
+    border-radius: 0.25rem;
+  }
+
+.form-check-input {
+    display: inline-block;
 }
 
-body {
-    font-size: 1rem;
-    color: var(--color-white);
-    margin: 0;
+header {
+    width: 100%;
+    margin: 0px;
+    text-align: center;
+    padding-top: 5%;
+    
 }
-
-#title {
-    font-family: 'Montserrat', serif;
-}
-
-.basic-text, form {
-    font-family: 'Noto Sans', serif;
-}
-
-
-
