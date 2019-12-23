@@ -12,24 +12,19 @@ body::before {
   height: 100%;
   width: 100%;
   z-index: -1;
-  background: linear-gradient(
-      115deg,
-      #485563,
-      #29323c);
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-position: center;
-  }
+  background: #0f0c29;  /* fallback for old browsers */
+  background: -webkit-linear-gradient(to right, #24243e, #302b63, #0f0c29);  /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to right, #24243e, #302b63, #0f0c29); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
 
 body {
   color: #fff;
 }
 
-
 form {
     padding: 2.5rem 0.625rem;
     border-radius: 0.25rem;
-  }
+}
 
 .form-check-input {
     display: inline-block;
