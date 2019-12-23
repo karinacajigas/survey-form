@@ -37,3 +37,15 @@ header {
     padding-top: 5%;
     
 }
+
+.btn {
+  background: lightgray;
+  color: black;
+  border: none;
+}
+
+.btn:hover {
+  background: white;
+  color: black;
+  border: none;
+}
