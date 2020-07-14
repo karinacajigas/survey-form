@@ -1,215 +1,198 @@
 <!DOCTYPE html>
 <html lang="en-US">
-    <head>
-        <!-- Required meta tags -->
-        <meta charset="utf-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-        <meta name="description" content="A survey form project acting as an employment application form used for the freeCodeCamp Responsive Web Design certification.">
-        <!-- Bootstrap CSS -->
-        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
-        <link href="style.css" type="text/css" rel="stylesheet">
-        <link   rel="stylesheet"
-                href="https://fonts.googleapis.com/css?family=Montserrat:700|Noto+Sans&display=swap">
-        <title>Employment Application</title>
-    </head>
-    <body>
-        <div class="container">
-            <header>
-                <h1 id="title">Employment Application Form</h1>
-                <p id="description" class="basic-text text-centered">
-                Complete the following form as part of the recruitment process here at TheCompany.com
-                </p>
-            </header>
-            <!-- Full form -->
-            <form action="" id="survey-form">
-                <div class="form-row">
-                    <div class="col">
-                        <label id="name-label" for="name">First Name</label>
-                        <input  
-                        type="text"
-                        name="name"
-                        id="name"
-                        class="form-control"
-                        placeholder="First Name"
-                        required/>
-                    </div>
-                    <div class="col">
-                        <label id="name-label" for="lname">Last Name</label>
-                        <input  
-                        type="text"
-                        name="lname"
-                        id="lname"
-                        class="form-control"
-                        placeholder="Last Name"
-                        required/>
-                    </div>                  
-                </div><br>
-                
-                <div class="form-group">
-                    <label id="email-label" for="email">Email</label>
-                    <input  
-                    type="email"
-                    name="email"
-                    id="email"
-                    class="form-control"
-                    placeholder="Email"
-                    required/>
-                </div><br>
-                
-                <div class="form-row">
-                    <div class="col">
-                        <label id="number-label" for="number">Years of Experience in Industry</label>
-                        <input
-                        type="number"
-                        name="number"
-                        id="number"
-                        class="form-control"
-                        placeholder="Years"
-                        min="0"
-                        max="100"/>
-                    </div>
-                    <div class="col">
-                        <label id="dropdown-label" for="level">How would you describe your experience level?</label>
-                        <select id="dropdown" name="level" class="form-control" required>
-                        <option disable selected value>Please select an option</option>
-                        <option value="entry-level">Entry-level</option>
-                        <option value="mid-level">Mid-level</option>
-                        <option value="senior-level">Senior-level</option>
-                        </select>
-                    </div>
-                </div><br>
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="A survey form project acting as an employment application form used for the freeCodeCamp Responsive Web Design certification."
+    />
+    <link href="style.css" type="text/css" rel="stylesheet" />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css?family=Montserrat:700|Noto+Sans&display=swap"
+    />
+    <title>Employment Application</title>
+  </head>
+  <body>
+   
+    <main>
+      <div class="heading">
+        <h1 id="title">Your next team</h1>
+        <p id="description">
+          Complete the following form as part of the recruitment process here at
+          TheCompany.com
+        </p>
+      </div>
 
-                <div class="form-row">
-                    <div class="col">
-                        <p>Please select the branch you're interested in:</p>
-                        <div class="col-sm-10">
-                            <div class="form-check">
-                                <label>
-                                    <input
-                                    type="radio"
-                                    name="branch-radio"
-                                    class="form-check-input"
-                                    value="Aguadilla"
-                                    />Aguadilla    
-                                </label>     
-                            </div>
-                            <div class="form-check">
-                                <label>
-                                    <input
-                                    type="radio"
-                                    name="branch-radio"
-                                    class="form-check-input"
-                                    value="Arecibo"
-                                    />Arecibo
-                                </label>
-                            </div>    
-                            <div class="form-check">
-                                <label>
-                                    <input
-                                    type="radio"
-                                    name="branch-radio"
-                                    class="form-check-input"
-                                    value="Dorado"
-                                    />Dorado    
-                                </label>
-                            </div>
-                            <div class="form-check">
-                                <label>
-                                    <input
-                                    type="radio"
-                                    name="branch-radio"
-                                    class="form-check-input"
-                                    value="San-Juan"
-                                    />San Juan
-                                </label>   
-                            </div>
-                        </div>
-                    </div>  
-                    <div class="col">
-                        <p>Which of these opportunities are you looking for?</p>
-                        <div class="col-sm-10">
-                            <div class="form-check">
-                                <label>
-                                    <input
-                                    type="checkbox"
-                                    name="op-checkbox"
-                                    class="form-check-input"
-                                    value="temporary"
-                                    />Temporary
-                                </label>  
-                            </div>
-                            <div class="form-check">
-                                <label>
-                                    <input
-                                    type="checkbox"
-                                    name="op-checkbox"
-                                    class="form-check-input"
-                                    value="contract"
-                                    />Contract
-                                </label>
-                            </div>
-                            <div class="form-check">
-                                <label>
-                                    <input
-                                    type="checkbox"
-                                    name="op-checkbox"
-                                    class="form-check-input"
-                                    value="part-time"
-                                    />Part-time
-                                </label>
-                            </div>
-                            <div class="form-check">
-                                <label>
-                                    <input
-                                    type="checkbox"
-                                    name="op-checkbox"
-                                    class="form-check-input"
-                                    value="full-time"
-                                    />Full-time
-                                </label>
-                            </div>
-                            <div class="form-check">
-                                <label>
-                                    <input
-                                    type="checkbox"
-                                    name="op-checkbox"
-                                    class="form-check-input"
-                                    value="remote"
-                                    />Remote
-                                </label>   
-                            </div>         
-                        </div>                   
-                    </div>      
-                </div><br>
-
-                <div class="form-group">
-                    <label>Please include any additional comments you think we should consider:</label>
-                    <textarea
-                        class="form-control"
-                        id="add-comments"
-                        rows="10"
-                        cols="40">
-                    </textarea>
-                </div><br>
-
-                <div class="form-group dash-border">
-                    <label for="resume">Resume (Please attach your resume in a .pdf file):</label>
-                    <input
-                        type="file"
-                        id="resume"
-                        name="resume"
-                        accept=".pdf"
-                        required
-                    />
-                </div>
-
-                <div class="form-group">
-                    <button type="submit" id="submit" class="btn submit-button">
-                        Submit
-                    </button>
-                </div>
-            </form>
+      <form action="" id="survey-form" class="form">
+        <div class="form-field">
+          <label id="first-name__label" for="name">First Name</label>
+          <input
+            type="text"
+            name="name"
+            id="name"
+            placeholder="First Name"
+            required
+          />
         </div>
-        <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
-    </body>
+
+        <div class="form-field">
+          <label id="last-name__label" for="lname">Last Name</label>
+          <input
+            type="text"
+            name="lname"
+            id="lname"
+            placeholder="Last Name"
+            required
+          />
+        </div>
+
+        <div class="form-field">
+          <label id="email-label" for="email">Email</label>
+          <input
+            type="email"
+            name="email"
+            id="email"
+            placeholder="Email"
+            required
+          />
+        </div>
+
+        <div class="form-field">
+          <label id="number-label" for="number"
+            >Years of Experience in Industry</label
+          >
+          <input
+            type="number"
+            name="number"
+            id="number"
+            placeholder="Years"
+            min="0"
+            max="100"
+          />
+        </div>
+
+        <div class="form-field">
+          <label id="dropdown-label" for="dropdown"
+            >Experience level:</label
+          >
+          <select id="dropdown" name="level" required>
+            <option disable selected value>Please select an option</option>
+            <option value="entry-level">Entry-level</option>
+            <option value="mid-level">Mid-level</option>
+            <option value="senior-level">Senior-level</option>
+          </select>
+        </div>
+
+        <div class="form-field">
+          <p>Please select the branch you're interested in:</p>
+          <label>
+            <input
+              type="radio"
+              name="branch-radio"
+              value="North-America"
+            />North Armerica
+          </label>
+
+          <label>
+            <input
+              type="radio"
+              name="branch-radio"
+              value="South-America"
+            />South America
+          </label>
+
+          <label>
+            <input
+              type="radio"
+              name="branch-radio"
+              value="Caribbean"
+            />Caribbean
+          </label>
+
+          <label>
+            <input type="radio" name="branch-radio" value="Europe" />Europe
+          </label>
+        </div>
+        <div class="form-field">
+          <p>Job:</p>
+
+          <label>
+            <input
+              type="checkbox"
+              name="op-checkbox"
+              value="ui"
+            />UI Designer
+          </label>
+
+          <label>
+            <input
+              type="checkbox"
+              name="op-checkbox"
+              value="front-end"
+            />Front-End Developer
+          </label>
+
+          <label>
+            <input
+              type="checkbox"
+              name="op-checkbox"
+              value="back-end"
+            />Back-End Developer
+          </label>
+
+          <label>
+            <input
+              type="checkbox"
+              name="op-checkbox"
+              value="devops"
+            />DevOps
+          </label>
+
+        </div>
+
+        <div class="form-field">
+          <label
+            >Please include any additional comments you think we should
+            consider:</label
+          >
+          <textarea id="add-comments" rows="10" cols="40"> </textarea>
+        </div>
+
+        <div class="form-field">
+          <label for="resume"
+            >Resume (Please attach your resume in a .pdf file):</label
+          >
+          <input type="file" id="resume" name="resume" accept=".pdf" required />
+        </div>
+
+        <div class="form-field">
+          <label for="contact"></label>
+          <label>
+            <input type="checkbox" name="op-checkbox" value="email-alerts" />I
+            wish to receive similar job oppening alerts to my email.
+          </label>
+        </div>
+
+        <div class="form-field">
+          <button type="submit" id="submit">
+            Submit
+          </button>
+        </div>
+      </form>
+    </main>
+
+    <footer class="footer">
+      <div class="footer-container">
+        <h2>
+          &#x1F4D0; Crafted by
+          <a href="https://www.linkedin.com/in/karinacajigas/" target="_blank"
+            >Karina Cajigas</a
+          >
+        </h2>
+      </div>
+    </footer>
+  </body>
 </html>
